@@ -1,0 +1,30 @@
+/* General */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.topbar {
+  z-index: 999 !important;
+}
+
+.overlay {
+  position: relative;
+  z-index: 40;
+}
+
+.invisible {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+#selectable {
+  cursor: pointer;
+}
