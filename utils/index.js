@@ -1,0 +1,1 @@
+export { checkTheme, switchTheme, DarkModeButton } from './Theme';
