@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
           description="Personal dashboard for my own devices and applications."
       />
 
-      <div className="bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100 min-h-screen" id="App">
+      <div className="bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-100 min-h-screen" id="App">
         <Component {...pageProps} />
 
         <DarkModeButton />

@@ -29,6 +29,30 @@ html {
   cursor: pointer;
 }
 
+.card-left {
+  border-left: 10px solid #b8b8b8;
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(rgb(35, 136, 114), rgb(1, 60, 150));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark * .card-left {
+  border-left: 10px solid #1b1f1c;
+}
+
+.dark * .gradient-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(rgb(48, 190, 160), rgb(6, 104, 250));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Dark Mode */
 
 :root {
