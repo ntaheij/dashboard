@@ -1,4 +1,7 @@
 import Page from "../components/cards/Page";
+import Clock from "../components/general/Clock";
+
+import { getHumanizedDate } from "../utils/getHumanDate";
 
 export default function Home() {
 
@@ -9,8 +12,8 @@ export default function Home() {
   return (
     <main className="p-4 md:p-24">
       <div id="hello">
-        <h2 className="gradient-text text-md md:text-2xl">Saturday, 16th October 2021, 10:51 PM</h2>
-        <h1 className="text-4xl md:text-6xl font-semibold">Good evening, <span className="gradient-text">Noah!</span></h1>
+        <h2 className="gradient-text text-md md:text-2xl"><Clock /></h2>
+        <h1 className="text-4xl md:text-6xl font-semibold">{getHumanizedDate()}, <span className="gradient-text">Noah!</span></h1>
         <h3 className="mt-1 md:mt-4 text-xl md:text-2xl"><span className="gradient-text">Overcast Clouds</span>, <span className="gradient-text">11</span> degrees, but feels like <span className="gradient-text">9</span> degrees in <span className="gradient-text">Emmeloord</span></h3>
 
         <h4 className="mt-8 text-3xl md:text-4xl font-semibold">Saved <span className="gradient-text">Pages</span></h4>
