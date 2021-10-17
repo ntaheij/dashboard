@@ -9,6 +9,7 @@ import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import { useEffect } from "react";
 import { checkTheme, DarkModeButton } from "../utils/theme";
+
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {

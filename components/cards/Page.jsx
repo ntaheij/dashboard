@@ -12,7 +12,7 @@ function Page(props) {
         <div className="w-full">
             <div>
               <p>{props.title} <span className="ml-1 text-gray-500">{props.subTitle}</span></p>
-              <p class="text-gray-400 truncate">{props.linkText}</p>
+              <p className="text-gray-400 truncate">{props.linkText}</p>
             </div>
         </div>
       </a>
