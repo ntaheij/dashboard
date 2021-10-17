@@ -1,6 +1,3 @@
-import { useQuery } from "react-query";
-import { useState } from "react";
-
 import Page from "../components/cards/Page";
 import Clock from "../components/general/Clock";
 
@@ -8,8 +5,7 @@ import { getHumanizedDate } from "../utils/getHumanDate";
 import capitalizeTheFirstLetterOfEachWord from "../utils/captializeLetters";
 import weatherQuery from "../utils/weatherQuery";
 
-export default function Home({weather_api_key, ip_locator_key}) {
-  const weather = weatherQuery(weather_api_key, ip_locator_key);  
+export default function Home() {
 
   const items = [
     "Nucleus", "Nucleus", "Nucleus", "Nucleus", "Nucleus", "Nucleus", "Nucleus", "Nucleus", "Nucleus",
@@ -68,13 +64,4 @@ export default function Home({weather_api_key, ip_locator_key}) {
       </div>
     </main>
   )
-}
-
-export async function getServerSideProps() {
-  return {
-      props: {
-          weather_api_key: process.env.WEATHER_API_KEY,
-          ip_locator_key: process.env.IP_LOCATOR_KEY,
-      },
-  };
 }
