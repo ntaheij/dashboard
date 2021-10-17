@@ -79,10 +79,32 @@ html {
   display: inline-block;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1919px) {
   .dark-mode {
     bottom: 2%;
     right: -2%;
+    z-index: 10;
+
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  .dark-mode:hover {
+    transition-timing-function: ease-out;
+    transform: translateX(-20px);
+  }
+
+  .dark-mode i {
+    transform: scaleX(-1);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .dark-mode {
+    bottom: 2%;
+    right: -1.25%;
     z-index: 10;
 
     -webkit-transition: 0.3s ease-in-out;
